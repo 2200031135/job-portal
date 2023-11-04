@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        table, th, td {
+            border: 1px solid #888;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        a {
+            text-decoration: none;
+            color: #0078d4;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .pass {
+            color: #008000; /* Green for pass */
+        }
+        .fail {
+            color: #FF0000; /* Red for fail */
+        }
+    </style>
+</head>
+<body>
+    <h1>Written Exam Results</h1>
+
+    <!-- GATE Exam Results Table -->
+    <table>
+        <tr>
+            <th>Results Date</th>
+            <th>Name of the Corporation</th>
+            <th>Exam Name</th>
+            <th>Pass/Fail</th>
+            <th>More Information</th>
+        </tr>
+        <tr>
+            <td>2023-10-15</td>
+            <td>GATE Exam Authority</td>
+            <td>Graduate Aptitude Test in Engineering (GATE)</td>
+            <td class="pass">Pass</td>
+            <td><a href="#">More Info</a></td>
+        </tr>
+        <!-- Add more rows with GATE exam results here -->
+    </table>
+
+    <!-- Teaching Exam Results Table -->
+    <table>
+        <tr>
+            <th>Results Date</th>
+            <th>Name of the Corporation</th>
+            <th>Exam Name</th>
+            <th>Pass/Fail</th>
+            <th>More Information</th>
+        </tr>
+        <tr>
+            <td>2023-10-16</td>
+            <td>Teaching Corporation</td>
+            <td>Teaching Assistant Exam</td>
+            <td class="fail">Fail</td>
+            <td><a href="#">More Info</a></td>
+        </tr>
+        <!-- Add more rows with teaching exam results here -->
+    </table>
+
+    <!-- Aerospace Exam Results Table -->
+    <table>
+        <tr>
+            <th>Results Date</th>
+            <th>Name of the Corporation</th>
+            <th>Exam Name</th>
+            <th>Pass/Fail</th>
+            <th>More Information</th>
+        </tr>
+        <tr>
+            <td>2023-10-17</td>
+            <td>Aerospace Corporation</td>
+            <td>Aerospace Engineer Exam</td>
+            <td class="pass">Pass</td>
+            <td><a href="#">More Info</a></td>
+        </tr>
+        <!-- Add more rows with aerospace exam results here -->
+    </table>
+</body>
+</html>

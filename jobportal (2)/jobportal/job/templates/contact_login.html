@@ -1,0 +1,119 @@
+{% load static %}
+
+{% block body %}
+
+{% include 'navigation.html' %}
+
+    <head>
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <section>
+        <h2>Contact Information</h2>
+        <p>If you have any questions or inquiries, please feel free to contact us using the information below:</p>
+
+        <address>
+            <strong>OJP Corporations</strong><br>
+            3rd Street<br>
+            Bengaluru, Karnataka<br>
+        </address>
+
+        <p>Email: <a href="mailto:contact@company.com">OJB@gmail.com</a></p>
+        <p>Phone: +783776539</p>
+    </section>
+
+    <section>
+        <h2>Contact Form</h2>
+        <form action="your_server_script.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 Company Name. All rights reserved.
+    </footer>
+</body>
+<style
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: maroon;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        address {
+            font-style: normal;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+    </style>
+
+{% endblock%}
+

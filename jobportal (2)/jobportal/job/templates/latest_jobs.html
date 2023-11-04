@@ -1,0 +1,50 @@
+{% load static %}
+
+{% include 'navigation.html' %}
+<div class="container">
+    <div class="row">
+        <select id="mySelect">
+            <option value=""><b>SELECT JOB</b></option>
+            <option value="software_page">SOFTWARE</option>
+            <option value="teaching_page">TEACHING</option>
+            <option value="aerospace_page">AEROSPACE</option>
+        </select>
+
+        <!-- JavaScript to handle the onchange event -->
+        <script>
+            document.getElementById("mySelect").onchange = function () {
+                // Get the selected value
+                var selectedValue = this.value;
+
+                // Check if a value is selected (not the default)
+                if (selectedValue !== "") {
+                    // Redirect to the selected page
+                    window.location.href = selectedValue + ".html"; // Assuming .html extension for the next page
+                }
+            };
+        </script>
+        <br>
+
+        <div class="col-md-4">
+            <a href="software_page.html"> <!-- Link to the next page -->
+                <img src="{% static 'images/image1.png' %}" style="width:100%; height:auto">
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <a href="teaching_page.html"> <!-- Link to the next page -->
+                <img src="{% static 'images/TEACH.png' %}" style="width:100%; height:auto">
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <a href="aerospace_page.html"> <!-- Link to the next page -->
+                <img src="{% static 'images/aero.png' %}" style="width:100%; height:auto">
+            </a>
+        </div>
+
+        {% block body %}
+
+        {% endblock %}
+    </div>
+</div>

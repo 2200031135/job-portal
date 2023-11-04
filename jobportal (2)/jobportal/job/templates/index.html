@@ -1,0 +1,215 @@
+{% load static %}
+
+{% block body %}
+  {% include 'navigation.html' %}
+
+
+  <div class="notifications">
+  <div class="notification-header">
+    <span class="notification-text">Notifications</span>
+  </div>
+   <ul class="latest-notifications">
+  <li><a href="notifications.html">Latest Announcements</a></li>
+  <li><a href="admitcard.html">Admit Card</a></li>
+  <li><a href="examresults.html">Exam Results</a></li>
+  <li><a href="notifications.html">Exam Date</a></li>
+  <li><a href="notifications.html">Answer Key</a></li>
+  <li><a href="notifications.html">Cutoff Marks</a></li>
+  <li><a href="notifications.html">Written Marks</a></li>
+  <li><a href="notifications.html">Interview Results</a></li>
+</ul>
+
+
+   <div class="upcoming-notifications">
+    <div class="upcoming-header">
+      <span class="upcoming-text">Upcoming-notifications</span>
+    </div>
+
+    <ul class="upcoming-notifications">
+
+      <li><a href="#">Examwise Information</a></li>
+      <li><a href="#">Notification Status</a></li>
+    </ul>
+     <div class="education-notifications">
+    <div class="education-header">
+      <span class="education-text">Education-notifications</span>
+    </div>
+    <ul class="education">
+      <li><a href="#">Eligibility</a></li>
+      <li><a href="#">Syllabus</a></li>
+      <li><a href="#">Exam Pattern</a></li>
+    </ul>
+  </div>
+   </div>
+ <div class="half">
+<div class="center-table">
+     <table>
+  <thead>
+    <tr>
+      <th>Post Date</th>
+      <th>Bank Name</th>
+      <th>Post Name</th>
+      <th>Qualification</th>
+      <th>Degree (Relevant discipline)</th>
+      <th>Advt No</th>
+      <th>Last Date</th>
+      <th>More Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10-10-2023</td>
+      <td>ADC Bank</td>
+      <td>Manager, Sr Manager & Other -115 Posts</td>
+      <td>Any Degree</td>
+      <td>06/10/23</td>
+      <td>28/09/23</td>
+      <td><a href="#">Get Details</a></td>
+    </tr>
+    <tr>
+      <td>10-10-2023</td>
+      <td>GPC Bank</td>
+      <td>Clerk - 20 Posts</td>
+      <td>Any Degree</td>
+      <td>20-10-2023</td>
+      <td></td>
+      <td><a href="#">Get Details..</a></td>
+    </tr>
+    <tr>
+      <td>10-10-2023</td>
+      <td>National Housing Bank</td>
+      <td>Deputy General Manager, Assistant General Manager & Other - 43 Posts</td>
+      <td>Degree (Relevant Discipline)</td>
+      <td>18-10-2023</td>
+      <td>19/09/23</td>
+      <td><a href="#">Get Details</a></td>
+    </tr>
+    <tr>
+      <td>10-10-2023</td>
+      <td>Chitradurga DCCB</td>
+      <td>FDA, SDA, Driver, Attender & Other - 68 Posts</td>
+      <td>SSLC, Degree, PG (Relevant Discipline)</td>
+      <td>16-10-2023</td>
+      <td></td>
+      <td><a href="#">Get Details</a></td>
+    </tr>
+    <tr>
+      <td>10-10-2023</td>
+      <td>SBI</td>
+      <td>Specialist Cadre Officer-439 Posts</td>
+      <td>B.E/B.Tech/ MCA /M. Tech/ M.Sc (Relevant engg)</td>
+      <td>21-10-2023</td>
+      <td>24/22</td>
+      <td><a href="#">Get Details</a></td>
+    </tr>
+
+  </tbody>
+</table>
+   </div>
+</div>
+</div>
+  <style>
+.notifications {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.notification-header {
+
+
+
+}
+  .notifications {
+  display: flex;
+  justify-content: space-between;
+}
+    .half {
+
+            display: flex;
+  justify-content: space-between;
+        }
+
+    /* Style the container div */
+    .notifications {
+      background-color: #f0f0f0;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+.upcoming-header {
+      background-color: black;
+      color: white;
+      border-radius: 8px 1px 0 0;
+      padding: 5px 5px;
+      font-weight: bold;
+      font-size: 15px;
+       width: 200px;
+    }
+    .education-header {
+      background-color: black;
+      color: white;
+      border-radius: 8px 1px 0 0;
+      padding: 5px 5px;
+      font-weight: bold;
+      font-size: 15px;
+       width: 200px;
+    }
+    /* Style the heading */
+    .notification-header {
+      background-color: black;
+      color: white;
+      border-radius: 8px 1px 0 0;
+      padding: 5px 5px;
+      font-weight: bold;
+       width: 200px;
+       font-size: 15px;
+
+    }
+
+    /* Style the lists */
+    .notifications ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    /* Style the list items */
+    .notifications li {
+      margin: 5px 0;
+    }
+
+    /* Style the links */
+    .notifications a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .notifications a:hover {
+      color: #007bff; /* Change the color on hover */
+    }
+    .center-table {
+  display: flex;
+  justify-content: center;
+}
+    table {
+  width: 55%;
+
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 1px;
+}
+
+th {
+  background-color: #ccc;
+}
+
+td {
+  background-color: white;
+}
+
+  </style>
+{% endblock %}
